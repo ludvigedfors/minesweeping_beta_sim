@@ -2,9 +2,9 @@ from turtle import color
 from urllib.parse import quote
 
 from nicegui import ui
-from models import Ship, load_mines_from_json
-from engine import check_for_mines, get_ship_pentagon, get_heading_line
-from engine import calculate_bearing, offset_point, get_mine_x, get_mine_sensor_data
+from minefieldbeta.src.models import Ship, load_mines_from_json
+from minefieldbeta.src.engine import check_for_mines, get_ship_pentagon, get_heading_line
+from minefieldbeta.src.engine import calculate_bearing, offset_point, get_mine_x, get_mine_sensor_data
 import numpy as np
 
 
