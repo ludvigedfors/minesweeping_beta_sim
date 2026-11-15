@@ -2,24 +2,24 @@ from turtle import color
 from urllib.parse import quote
 
 from nicegui import ui
-from minefieldbeta.src.models import Ship, load_mines_from_json
-from minefieldbeta.src.engine import check_for_mines, get_ship_pentagon, get_heading_line
-from minefieldbeta.src.engine import calculate_bearing, offset_point, get_mine_x, get_mine_sensor_data
+from models import Ship, load_mines_from_json
+from engine import check_for_mines, get_ship_pentagon, get_heading_line
+from engine import calculate_bearing, offset_point, get_mine_x, get_mine_sensor_data
 import numpy as np
 
 
 # ==========================================
 # 1. DATA & STATUS 
 # ==========================================
-mines = load_mines_from_json("minefieldbeta/mines.json")
+mines = load_mines_from_json("./minefieldbeta/src/mines.json")
 ship = Ship(base_magnetic_signature=50.0, 
             base_acoustic_signature=50.0,
             base_pressure_signature=100.0,
             max_speed_knots=50.0,
-            lat=58.8210, 
+            lat=58.81750, 
             lon=17.8857, 
             speed_knots=4.0, 
-            heading_deg=0.0) 
+            heading_deg=180.0) 
 
 mines_visible = True
 is_running = True  # Controls whether the boat is moving or paused
@@ -65,7 +65,7 @@ def draw_mines():
             )
 
             # text that only works sometimes idk why
-            label_text = f"{mine.id}: {mine.name}"
+            label_text = f"{mine.id}"
             center_dot.run_method("bindTooltip", label_text, {"permanent": True, "direction": "right", "offset": [10, 0]})
 
             mine_layers.append(center_dot)
@@ -133,6 +133,7 @@ def update_simulation():
             toggle_running()  # Stop the boat automatically when a mine is triggered
 
         
+
             
 
 

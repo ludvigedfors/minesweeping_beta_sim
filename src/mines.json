@@ -1,26 +1,50 @@
 [
   {
     "id": "M1",
-    "name": "Acoustic mine",
-    "lat": 58.8239,
-    "lon": 17.8893,
+    "name": "--- mine",
+    "lat": 58.8150,
+    "lon": 17.8850,
     "depth_m": 30,
     "radius_m": 250,
-    "magnetic_sensitivity": 50.0,
-    "acoustic_sensitivity": 70.0,
-    "pressure_sensitivity": 50.0,
+    "magnetic_sensitivity": 40.0,
+    "acoustic_sensitivity": 40.0,
+    "pressure_sensitivity": 40.0,
     "severity": "medium"
   }, 
   {
     "id": "M2",
-    "name": "Pressure mine",
-    "lat": 58.8199,
-    "lon": 17.8857,
+    "name": "--- mine",
+    "lat": 58.8150,
+    "lon": 17.8875,
     "depth_m": 30,
     "radius_m": 250,
-    "magnetic_sensitivity": 50.0,
-    "acoustic_sensitivity": 50.0,
-    "pressure_sensitivity": 90.0,
+    "magnetic_sensitivity": 80.0,
+    "acoustic_sensitivity": 80.0,
+    "pressure_sensitivity": 80.0,
+    "severity": "high"
+  }, 
+  {
+    "id": "M3",
+    "name": "--- mine",
+    "lat": 58.8150,
+    "lon": 17.8900,
+    "depth_m": 30,
+    "radius_m": 250,
+    "magnetic_sensitivity": 40.0,
+    "acoustic_sensitivity": 40.0,
+    "pressure_sensitivity": 40.0,
+    "severity": "high"
+  }, 
+  {
+    "id": "M4",
+    "name": "--- mine",
+    "lat": 58.8150,
+    "lon": 17.8925,
+    "depth_m": 30,
+    "radius_m": 250,
+    "magnetic_sensitivity": 80.0,
+    "acoustic_sensitivity": 80.0,
+    "pressure_sensitivity": 80.0,
     "severity": "high"
   }
 ]

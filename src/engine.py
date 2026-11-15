@@ -1,5 +1,5 @@
 from geopy.distance import geodesic
-from minefieldbeta.src.models import Mine, Ship
+from models import Mine, Ship
 import numpy as np
 
 def check_for_mines(ship: Ship, mines: list[Mine]) -> list[tuple[Mine, float]]:
