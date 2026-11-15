@@ -1,0 +1,26 @@
+[
+  {
+    "id": "M1",
+    "name": "Acoustic mine",
+    "lat": 58.8239,
+    "lon": 17.8893,
+    "depth_m": 30,
+    "radius_m": 250,
+    "magnetic_sensitivity": 50.0,
+    "acoustic_sensitivity": 70.0,
+    "pressure_sensitivity": 50.0,
+    "severity": "medium"
+  }, 
+  {
+    "id": "M2",
+    "name": "Pressure mine",
+    "lat": 58.8199,
+    "lon": 17.8857,
+    "depth_m": 30,
+    "radius_m": 250,
+    "magnetic_sensitivity": 50.0,
+    "acoustic_sensitivity": 50.0,
+    "pressure_sensitivity": 90.0,
+    "severity": "high"
+  }
+]
